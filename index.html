@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HanTul's Portfolio</title>
+    <meta name="description" content="Security Researcher & Bug Bounty Hunter. Web Security, CVE, CTF.">
+    <meta name="keywords" content="HanTul, Security, Web Security, Bug Bounty, CVE, Portfolio">
+    <meta name="author" content="HanTul">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/HanTul_profile.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HanTul's Portfolio">
+    <meta property="og:description" content="Security Researcher & Bug Bounty Hunter">
+    <meta property="og:image" content="images/HanTul_profile.png">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">HanTul</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-en="About" data-ko="소개"></a>
+                <a href="#affiliations" class="nav-link" data-en="Affiliations" data-ko="소속"></a>
+                <a href="#cve" class="nav-link">CVE</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-ko="프로젝트"></a>
+                <a href="#awards" class="nav-link" data-en="Awards" data-ko="수상"></a>
+                <a href="#education" class="nav-link" data-en="Education" data-ko="교육"></a>
+                <a href="#activities" class="nav-link" data-en="Activities" data-ko="활동"></a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-ko="연락처"></a>
+            </div>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-option" data-lang="ko">KR</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link" data-en="About" data-ko="소개"></a>
+        <a href="#affiliations" class="mobile-link" data-en="Affiliations" data-ko="소속"></a>
+        <a href="#cve" class="mobile-link">CVE</a>
+        <a href="#projects" class="mobile-link" data-en="Projects" data-ko="프로젝트"></a>
+        <a href="#awards" class="mobile-link" data-en="Awards" data-ko="수상"></a>
+        <a href="#education" class="mobile-link" data-en="Education" data-ko="교육"></a>
+        <a href="#activities" class="mobile-link" data-en="Activities" data-ko="활동"></a>
+        <a href="#contact" class="mobile-link" data-en="Contact" data-ko="연락처"></a>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <!-- Hero -->
+            <header id="about" class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span class="status-dot"></span>
+                            <span data-en="On standby.." data-ko="대기 중.."></span>
+                        </div>
+
+                        <h1 class="hero-name">HanTul</h1>
+
+                        <p class="hero-bio" data-en="Undergraduate student at Korea University - Sejong Campus, majoring in AI Cyber Security.|Passionate about Web Security and Bug Bounty, and actively researching in these fields." data-ko="고려대학교 세종캠퍼스 인공지능사이버보안학과에 재학 중입니다.|웹 보안과 버그 바운티 분야에 관심을 가지고 꾸준히 연구하고 있습니다."></p>
+
+                        <div class="hero-links">
+                            <a href="mailto:bluevenus02@gmail.com" class="btn btn-primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                Email
+                            </a>
+                            <a href="https://github.com/HanTul" target="_blank" rel="noopener" class="btn btn-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                GitHub
+                            </a>
+                            <a href="https://hantul.tistory.com" target="_blank" rel="noopener" class="btn btn-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                Blog
+                            </a>
+                        </div>
+
+                                            </div>
+
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img src="images/HanTul_profile.png" alt="HanTul" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="profile-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Affiliations -->
+            <section id="affiliations" class="section">
+                <h2 class="section-title" data-en="Affiliations" data-ko="소속"></h2>
+                <div class="affiliations-grid">
+                    <div class="affiliation-card">
+                        <div class="affiliation-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <div class="affiliation-info">
+                            <div class="affiliation-header">
+                                <h3 class="affiliation-name">SeeCure Lab</h3>
+                                <span class="affiliation-date">2025.09 - Present</span>
+                            </div>
+                            <p class="affiliation-role" data-en="Undergraduate Researcher" data-ko="학부연구생"></p>
+                            <p class="affiliation-desc"><a href="https://secu.korea.ac.kr/faculty/8261/subview.do" target="_blank" rel="noopener" data-en="Lab of Prof. Junmin Kang, Korea University" data-ko="고려대학교 강정민 교수님 연구실"></a></p>
+                        </div>
+                    </div>
+                    <div class="affiliation-card">
+                        <div class="affiliation-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="affiliation-info">
+                            <div class="affiliation-header">
+                                <h3 class="affiliation-name">KUality</h3>
+                                <span class="affiliation-date">2023 - Present</span>
+                            </div>
+                            <p class="affiliation-role" data-en="Vice President (2024.08 ~) · Member (2023)" data-ko="부회장 (2024.08 ~) · 부원 (2023)"></p>
+                            <p class="affiliation-desc" data-en="Hacking Research Club, Dept. of AI Cyber Security" data-ko="인공지능사이버보안학과 해킹 연구 동아리"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CVE -->
+            <section id="cve" class="section">
+                <h2 class="section-title">CVE</h2>
+                <div class="card-list">
+                    <div class="card card-cve">
+                        <div class="card-header">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56526" class="cve-link" target="_blank" rel="noopener">CVE-2025-56526</a>
+                            <span class="card-date">2025</span>
+                        </div>
+                        <p class="card-desc" data-en="Cross site scripting (XSS) vulnerability in Kotaemon 0.11.0 allowing attackers to execute arbitrary code via a crafted PDF." data-ko="Kotaemon 0.11.0에서 조작된 PDF를 통해 공격자가 임의 코드를 실행할 수 있는 Cross Site Scripting(XSS) 취약점"></p>
+                        <div class="cve-footer">
+                            <div class="cve-tags">
+                                <span class="cve-tag">XSS</span>
+                                <span class="cve-tag">Kotaemon</span>
+                            </div>
+                            <a href="https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure" class="cve-report" target="_blank" rel="noopener">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card card-cve">
+                        <div class="card-header">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56527" class="cve-link" target="_blank" rel="noopener">CVE-2025-56527</a>
+                            <span class="card-date">2025</span>
+                        </div>
+                        <p class="card-desc" data-en="Plaintext password storage in Kotaemon 0.11.0 in the client's localStorage." data-ko="Kotaemon 0.11.0에서 클라이언트 localStorage에 평문 패스워드가 저장되는 취약점"></p>
+                        <div class="cve-footer">
+                            <div class="cve-tags">
+                                <span class="cve-tag">Sensitive Data Exposure</span>
+                                <span class="cve-tag">Kotaemon</span>
+                            </div>
+                            <a href="https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure" class="cve-report" target="_blank" rel="noopener">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section">
+                <h2 class="section-title" data-en="Projects" data-ko="프로젝트"></h2>
+                <div class="projects-grid">
+                    <a href="https://github.com/HanTul/KUality-webhacking-study" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <h3 class="project-name">KUality Web Hacking Study</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p class="project-desc" data-en="Simple bulletin board for CRUD practice with Flask" data-ko="Flask를 활용한 CRUD 실습용 게시판"></p>
+                        <div class="project-category" data-en="Web Development" data-ko="웹 개발"></div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/HanTul/KnockOn-Web" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <h3 class="project-name">KnockOn Bootcamp Web</h3>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <p class="project-desc" data-en="CRUD web application built during KnockOn Bootcamp" data-ko="KnockOn 부트캠프에서 제작한 CRUD 웹 애플리케이션"></p>
+                        <div class="project-category" data-en="Web Development" data-ko="웹 개발"></div>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Web-Programming-8/Web-programming" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <h3 class="project-name">KO-Map</h3>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <p class="project-desc" data-en="Korea map exploration website built in Dept. of AI Cyber Security web programming course" data-ko="인공지능사이버보안학과 웹 프로그래밍 강의에서 제작한 한국 지도 탐색 사이트"></p>
+                        <div class="project-category" data-en="Web Development" data-ko="웹 개발"></div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/HanTul/WHS_Secure_Coding" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <h3 class="project-name">Secondhand Marketplace</h3>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <p class="project-desc" data-en="Secondhand trading website built in WhiteHat School secure coding course" data-ko="화이트햇 스쿨 시큐어 코딩 강의에서 제작한 중고거래 사이트"></p>
+                        <div class="project-category" data-en="Secure Coding" data-ko="시큐어 코딩"></div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </a>
+                    <div class="project-card no-link">
+                        <div class="project-header">
+                            <h3 class="project-name">LLM-Integrated Application Bug Hunting</h3>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <p class="project-desc" data-en="LLM-integrated application bug hunting with WhiteHat School Team 404 Not Found" data-ko="화이트햇 스쿨 Team 404 Not Found와 함께한 LLM 통합 어플리케이션 버그헌팅"></p>
+                        <div class="project-category" data-en="Bug Hunting" data-ko="버그 헌팅"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section id="awards" class="section">
+                <h2 class="section-title" data-en="Awards" data-ko="수상"></h2>
+
+                <div class="year-group">
+                    <div class="year-header">2025</div>
+                    <div class="card-list">
+                        <div class="card card-award">
+                            <div class="award-rank">🥇</div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <h3 class="card-title" data-en="2nd AI Cyber Security Academic Festival - Best Award (Junior)" data-ko="제2회 인공지능사이버보안학과 학술제 최우수상 (3학년)"></h3>
+                                </div>
+                                <p class="card-desc" data-en="LLM-based Web Vulnerability Scanner" data-ko="LLM 기반 웹 취약점 스캐너"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="section">
+                <h2 class="section-title" data-en="Education" data-ko="교육"></h2>
+
+                <div class="edu-section">
+                    <h3 class="edu-category" data-en="Academic" data-ko="학력"></h3>
+                    <div class="card-list">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title" data-en="Korea University - Sejong Campus" data-ko="고려대학교 세종캠퍼스"></h4>
+                                <span class="card-date">2023 - Present</span>
+                            </div>
+                            <p class="card-desc" data-en="Department of AI Cyber Security (Class of 2023)" data-ko="인공지능사이버보안학과 23학번"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-section">
+                    <h3 class="edu-category" data-en="Training" data-ko="교육 / 수료"></h3>
+
+                    <div class="year-group">
+                        <div class="year-header">2025</div>
+                        <div class="card-list">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" data-en="KITRI - WhiteHat School 3rd (Pre-BoB)" data-ko="한국정보기술연구원 (KITRI) - 화이트햇 스쿨 3기 (Pre-BoB)"></h4>
+                                    <span class="card-date">2025.03 - 2025.09</span>
+                                </div>
+                                <p class="card-desc" data-en="Next-Generation Security Leader Program" data-ko="차세대 보안 리더 양성 프로그램"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="year-group">
+                        <div class="year-header">2024</div>
+                        <div class="card-list">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" data-en="KnockOn - ELITE WHITE HACKER Bootcamp 3rd" data-ko="KnockOn - ELITE WHITE HACKER Bootcamp 3기"></h4>
+                                    <span class="card-date">2024.11 - 2025.02</span>
+                                </div>
+                                <p class="card-desc" data-en="TOP 7" data-ko="TOP 7 수료"></p>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" data-en="KISEC - Start-Up K-Shield Jr." data-ko="한국정보보호교육센터 (KISEC) - K-Shield Jr."></h4>
+                                    <span class="card-date">2024.10.22 - 2024.11.03</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" data-en="Jungbu InfoSec Center - Web Vulnerability Inspection Practice" data-ko="중부정보보호지원센터 - 웹취약점 점검 실습"></h4>
+                                    <span class="card-date">2024.10.08</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-section">
+                    <h3 class="edu-category" data-en="Certifications" data-ko="자격증"></h3>
+                    <div class="card-list">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">AWS Certified AI Practitioner</h4>
+                                <span class="card-date">2025.12</span>
+                            </div>
+                            <p class="card-desc" data-en="Valid until 2028.12" data-ko="만료일 2028.12"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activities -->
+            <section id="activities" class="section">
+                <h2 class="section-title" data-en="Activities" data-ko="활동"></h2>
+
+                <div class="year-group">
+                    <div class="year-header">2025</div>
+                    <div class="card-list">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title" data-en="KCTF Jr. Challenge Development" data-ko="KCTF Jr. 문제 출제"></h3>
+                            </div>
+                            <p class="card-desc" data-en="Dept. of AI Cyber Security & KUality" data-ko="인공지능사이버보안학과 & KUality 공동 주최"></p>
+                            <div class="activity-footer">
+                                <div class="activity-category" data-en="Misc - 2 problems" data-ko="Misc - 2문제"></div>
+                                <div class="activity-links">
+                                    <a href="https://github.com/kuality/KCTF-jr-2025/tree/main/MISC" target="_blank" rel="noopener" class="activity-link">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                        KCTF Jr. Repo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-group">
+                    <div class="year-header">2024</div>
+                    <div class="card-list">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title" data-en="KCTF Jr. & KCTF Challenge Development" data-ko="KCTF Jr. & KCTF 문제 출제"></h3>
+                            </div>
+                            <p class="card-desc" data-en="Dept. of AI Cyber Security & KUality" data-ko="인공지능사이버보안학과 & KUality 공동 주최"></p>
+                            <div class="activity-footer">
+                                <div class="activity-category" data-en="Web (easy) - 2 problems" data-ko="Web (easy) - 2문제"></div>
+                                <div class="activity-links">
+                                    <a href="https://github.com/HanTul/KUality_KCTF" target="_blank" rel="noopener" class="activity-link">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                        My Repo
+                                    </a>
+                                    <a href="https://github.com/kuality/KCTFjr_2024/tree/master/WEB" target="_blank" rel="noopener" class="activity-link">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                        KCTF Jr. Repo
+                                    </a>
+                                    <a href="https://github.com/kuality/KCTF-2024/tree/main/WEB" target="_blank" rel="noopener" class="activity-link">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                        KCTF Repo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="section">
+                <h2 class="section-title" data-en="Contact" data-ko="연락처"></h2>
+                <div class="contact-grid">
+                    <a href="mailto:bluevenus02@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">bluevenus02@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/HanTul" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/HanTul</span>
+                        </div>
+                    </a>
+                    <a href="https://hantul.tistory.com" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Blog</span>
+                            <span class="contact-value">hantul.tistory.com</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2026 HanTul</p>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
