@@ -299,6 +299,7 @@ a {
     line-height: 1.8;
     margin-bottom: 32px;
     max-width: 500px;
+    word-break: keep-all;
 }
 
 .hero-links {
