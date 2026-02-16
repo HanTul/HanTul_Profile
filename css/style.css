@@ -920,6 +920,7 @@ a {
     .hero-bio {
         font-size: 15px;
         max-width: 100%;
+        word-break: keep-all;
     }
 
     .hero-bio br {
