@@ -636,6 +636,30 @@ a {
     color: var(--accent);
 }
 
+/* CVE Pending Placeholder */
+.card-cve-pending {
+    border-style: dashed;
+    opacity: 0.7;
+}
+
+.card-cve-pending:hover {
+    opacity: 0.9;
+}
+
+.cve-reserved {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.card-cve-pending .cve-tag {
+    color: var(--text-muted);
+    background: rgba(161, 161, 170, 0.08);
+    border-color: rgba(161, 161, 170, 0.2);
+}
+
 /* Award Card */
 .card-award {
     display: flex;
@@ -921,10 +945,6 @@ a {
         font-size: 15px;
         max-width: 100%;
         word-break: keep-all;
-    }
-
-    .hero-bio br {
-        display: none;
     }
 
     .hero-badge {
