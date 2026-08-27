@@ -3,73 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HanTul's Profile</title>
-    <meta name="description" content="Security Researcher & Bug Bounty Hunter. Web Security, CVE, CTF.">
-    <meta name="keywords" content="HanTul, Security, Web Security, Bug Bounty, CVE, Profile">
+    <title>HanTul | Security Researcher &amp; Bug Bounty Hunter</title>
+    <meta name="description" content="HanTul is a security researcher and bug bounty hunter focused on web security, LLM security, AI agents, CVE research, and CTFs.">
+    <meta name="keywords" content="HanTul, security researcher, web security, bug bounty, CVE, LLM security, AI security, CTF">
     <meta name="author" content="HanTul">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://hantul.kr/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/HanTul_profile.png">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="HanTul's Profile">
-    <meta property="og:description" content="Security Researcher & Bug Bounty Hunter">
-    <meta property="og:image" content="images/HanTul_profile.png">
+    <meta property="og:title" content="HanTul | Security Researcher &amp; Bug Bounty Hunter">
+    <meta property="og:description" content="HanTul's security research, CVEs, bug bounty findings, awards, and projects.">
+    <meta property="og:url" content="https://hantul.kr/">
+    <meta property="og:image" content="https://hantul.kr/images/HanTul_profile.png">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HanTul">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Social Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HanTul | Security Researcher &amp; Bug Bounty Hunter">
+    <meta name="twitter:description" content="HanTul's security research, CVEs, bug bounty findings, awards, and projects.">
+    <meta name="twitter:image" content="https://hantul.kr/images/HanTul_profile.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "HanTul",
+        "url": "https://hantul.kr/",
+        "image": "https://hantul.kr/images/HanTul_profile.png",
+        "jobTitle": "Security Researcher",
+        "description": "Security researcher and bug bounty hunter focused on web security, LLM security, AI agents, CVE research, and CTFs.",
+        "affiliation": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Korea University"
+            },
+            {
+                "@type": "Organization",
+                "name": "SeeCure Lab",
+                "url": "https://seecure-lab.lovable.app/"
+            }
+        ],
+        "sameAs": [
+            "https://github.com/HanTul",
+            "https://hantul.tistory.com"
+        ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <span id="top"></span>
+    <a class="skip-link" href="#content" data-en="Skip to content" data-ko="본문으로 바로가기"></a>
     <div class="layout">
-
-        <!-- Sidebar (identity + nav) -->
-        <aside class="sidebar" id="about">
-            <div class="sidebar-top">
-                <img class="side-portrait" src="images/HanTul_profile.png" alt="HanTul" onerror="this.style.display='none';">
-                <p class="kicker">Security Researcher</p>
-                <h1 class="side-name">HanTul</h1>
-                <p class="side-role" data-en="Korea University, Sejong · AI Cyber Security" data-ko="고려대학교 세종캠퍼스 · 인공지능사이버보안학과"></p>
-                <p class="side-bio" data-en="Studying Web Security and hunting bugs, while researching LLM Security and AI Agents." data-ko="웹 보안을 공부하고 버그 바운티를 하며, LLM 보안과 AI Agent를 연구하고 있습니다."></p>
-                <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">
-                    <span class="lang-option active" data-lang="en">EN</span>
-                    <span class="lang-sep">/</span>
-                    <span class="lang-option" data-lang="ko">한국어</span>
-                </button>
-            </div>
-
-            <nav class="side-nav">
-                <a href="#affiliations" class="side-link" data-sec="affiliations"><span class="side-num">01</span><span class="side-text" data-en="Affiliations" data-ko="소속"></span></a>
-                <a href="#cve" class="side-link" data-sec="cve"><span class="side-num">02</span><span class="side-text">CVE &amp; Bug Bounty</span></a>
-                <a href="#projects" class="side-link" data-sec="projects"><span class="side-num">03</span><span class="side-text" data-en="Projects" data-ko="프로젝트"></span></a>
-                <a href="#awards" class="side-link" data-sec="awards"><span class="side-num">04</span><span class="side-text" data-en="Awards" data-ko="수상"></span></a>
-                <a href="#education" class="side-link" data-sec="education"><span class="side-num">05</span><span class="side-text" data-en="Education" data-ko="교육"></span></a>
-                <a href="#activities" class="side-link" data-sec="activities"><span class="side-num">06</span><span class="side-text" data-en="Activities" data-ko="활동"></span></a>
-                <a href="#contact" class="side-link" data-sec="contact"><span class="side-num">07</span><span class="side-text" data-en="Contact" data-ko="연락처"></span></a>
-            </nav>
-
-            <div class="sidebar-foot">
-                <div class="social">
-                    <a href="mailto:bluevenus02@gmail.com">Email <span class="arr">↗</span></a>
+        <header class="site-header" id="top">
+            <div class="masthead">
+                <a class="wordmark" href="#top" aria-label="HanTul home">HANTUL</a>
+                <div class="masthead-links">
                     <a href="https://github.com/HanTul" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
                     <a href="https://hantul.tistory.com" target="_blank" rel="noopener">Blog <span class="arr">↗</span></a>
+                    <a href="mailto:bluevenus02@gmail.com">Contact <span class="arr">↗</span></a>
+                    <div class="language-switch" role="group" aria-label="Language / 언어">
+                        <button class="lang-option active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                        <span class="lang-sep" aria-hidden="true">/</span>
+                        <button class="lang-option" type="button" data-lang="ko" aria-pressed="false">KR</button>
+                    </div>
                 </div>
             </div>
-        </aside>
+            <div class="hero" id="about">
+                <div>
+                    <p class="kicker">Security Researcher</p>
+                    <h1 class="hero-name">HanTul</h1>
+                </div>
+                <p class="hero-bio" data-en="Studying Web Security and hunting bugs, while researching LLM Security and AI Agents." data-ko="웹 보안을 공부하고 버그 바운티를 하며, LLM 보안과 AI Agent를 연구하고 있습니다."></p>
+            </div>
+        </header>
+
+        <nav class="section-nav" aria-label="Sections / 목차">
+            <a href="#research" class="section-link" data-sec="research"><span class="nav-num">01</span><span data-en="Research" data-ko="연구 과제"></span></a>
+            <a href="#affiliations" class="section-link" data-sec="affiliations"><span class="nav-num">02</span><span data-en="Affiliations" data-ko="소속"></span></a>
+            <a href="#cve" class="section-link" data-sec="cve"><span class="nav-num">03</span><span>CVE &amp; Bug Bounty</span></a>
+            <a href="#awards" class="section-link" data-sec="awards"><span class="nav-num">04</span><span data-en="Awards" data-ko="수상"></span></a>
+            <a href="#projects" class="section-link" data-sec="projects"><span class="nav-num">05</span><span data-en="Projects" data-ko="프로젝트"></span></a>
+            <a href="#education" class="section-link" data-sec="education"><span class="nav-num">06</span><span data-en="Education" data-ko="교육"></span></a>
+            <a href="#activities" class="section-link" data-sec="activities"><span class="nav-num">07</span><span data-en="Activities" data-ko="활동"></span></a>
+            <a href="#contact" class="section-link" data-sec="contact"><span class="nav-num">08</span><span data-en="Contact" data-ko="연락처"></span></a>
+        </nav>
 
         <!-- Content -->
-        <main class="content">
+        <main class="content" id="content">
+            <div class="overview">
+            <!-- Research -->
+            <section id="research" class="block">
+                <div class="block-head">
+                    <span class="block-num">01</span>
+                    <h2 class="block-title" data-en="Research" data-ko="연구 과제"></h2>
+                </div>
+                <div class="research-entry">
+                    <p class="research-funder" data-en="NRF · National Research Foundation of Korea" data-ko="NRF · 한국연구재단"></p>
+                    <h3 class="entry-title" data-en="AI-Based Future Threat Scenario Prediction from Threat Actor Campaigns and Advanced Response Techniques Using MITRE D3FEND" data-ko="Threat Actor 캠페인 기반 미래 위협 시나리오 예측 AI 기술 및 MITRE D3FEND 기반 대응 기법 고도화 연구"></h3>
+                    <p class="entry-tags"><span data-en="AI Security" data-ko="AI 보안"></span> · Threat Intelligence, MITRE D3FEND</p>
+                    <div class="research-meta">
+                        <span data-en="Research Participant" data-ko="연구 참여"></span>
+                        <span class="entry-date">2025.09 ~ 2028</span>
+                    </div>
+                </div>
+            </section>
 
             <!-- Affiliations -->
             <section id="affiliations" class="block">
                 <div class="block-head">
-                    <span class="block-num">01</span>
+                    <span class="block-num">02</span>
                     <h2 class="block-title" data-en="Affiliations" data-ko="소속"></h2>
                 </div>
                 <div class="entries">
@@ -79,7 +134,7 @@
                             <span class="entry-date">2025.09 ~ Present</span>
                         </div>
                         <p class="entry-sub" data-en="Undergraduate Researcher" data-ko="학부연구생"></p>
-                        <p class="entry-note"><a href="https://secu.korea.ac.kr/faculty/8261/subview.do" target="_blank" rel="noopener" data-en="Lab of Prof. Jungmin Kang, Korea University ↗" data-ko="고려대학교 강정민 교수님 연구실 ↗"></a></p>
+                        <p class="entry-note"><a href="https://seecure-lab.lovable.app/" target="_blank" rel="noopener" data-en="Lab of Prof. Jungmin Kang, Korea University ↗" data-ko="고려대학교 강정민 교수님 연구실 ↗"></a></p>
                     </div>
                     <div class="entry">
                         <div class="entry-head">
@@ -91,103 +146,169 @@
                     </div>
                 </div>
             </section>
+            </div>
 
             <!-- CVE & Bug Bounty -->
             <section id="cve" class="block">
                 <div class="block-head">
-                    <span class="block-num">02</span>
+                    <span class="block-num">03</span>
                     <h2 class="block-title">CVE &amp; Bug Bounty</h2>
                 </div>
 
-                <div class="adv-group">
-                    <div class="adv-year">2026</div>
-                    <div class="adv-columns" aria-hidden="true">
-                        <span>ID</span>
-                        <span data-en="Target" data-ko="대상"></span>
-                        <span data-en="Score / Type" data-ko="점수 / 유형"></span>
-                        <span data-en="Status / Link" data-ko="상태 / 링크"></span>
+                <div class="adv-category adv-category-pending">
+                    <div class="adv-category-head">
+                        <h3 class="adv-category-title" data-en="Upcoming Disclosure" data-ko="공개 예정"></h3>
+                        <span class="adv-category-year">2026</span>
                     </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id" data-en="To Be Assigned" data-ko="할당 예정"></span>
-                        <span class="adv-target">BerriAI LiteLLM</span>
-                        <span class="adv-type" data-en="CVSS TBD" data-ko="CVSS 미정"></span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-31600</span>
-                        <span class="adv-target">Apple</span>
-                        <span class="adv-type">CVSS 3.3</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row">
-                        <span class="adv-id adv-id-confirmed">CVE-2026-42170</span>
-                        <span class="adv-target">GIMP</span>
-                        <span class="adv-type">CVSS 7.8</span>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42170" class="adv-report adv-report-confirmed" target="_blank" rel="noopener">NVD ↗</a>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-32516</span>
-                        <span class="adv-target">Adobe</span>
-                        <span class="adv-type">CVSS 3.3</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-32181</span>
-                        <span class="adv-target">Adobe</span>
-                        <span class="adv-type">CVSS 3.3</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-31681</span>
-                        <span class="adv-target">BerriAI LiteLLM</span>
-                        <span class="adv-type">CVSS 4.9</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row">
-                        <span class="adv-id adv-id-confirmed">TBB-26350</span>
-                        <span class="adv-target">Toss</span>
-                        <span class="adv-type" data-en="Bug Bounty" data-ko="버그바운티"></span>
-                        <a href="https://bugbounty.toss.im/ranking" class="adv-report adv-report-confirmed" target="_blank" rel="noopener" data-en="Hall of Fame ↗" data-ko="명예의 전당 ↗"></a>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-31150</span>
-                        <span class="adv-target">Adobe</span>
-                        <span class="adv-type">CVSS 3.3</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-30890</span>
-                        <span class="adv-target">Cursor</span>
-                        <span class="adv-type">CVSS 7.8</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
-                    </div>
-                    <div class="adv-row adv-pending">
-                        <span class="adv-id">ZDI-CAN-30889</span>
-                        <span class="adv-target">Cursor</span>
-                        <span class="adv-type">CVSS 7.8</span>
-                        <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
+                    <div class="adv-group">
+                        <div class="adv-row adv-pending">
+                            <a href="https://www.cve.org/CVERecord?id=CVE-2026-65864" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2026-65864</a>
+                            <span class="adv-target" data-en="Undisclosed Vendor" data-ko="대상 비공개"></span>
+                            <span class="adv-type" data-en="CVSS Pending" data-ko="CVSS 미정"></span>
+                            <span class="adv-status status-upcoming" data-en="Upcoming" data-ko="공개 예정"></span>
+                        </div>
+                        <div class="adv-private-summary">
+                            <span class="adv-private-label" data-en="Additional Undisclosed Findings" data-ko="추가 비공개 제보"></span>
+                            <span class="adv-private-meta">
+                                <span class="adv-private-count" data-en="13 cases" data-ko="13건"></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="adv-group">
-                    <div class="adv-year">2025</div>
-                    <div class="adv-columns" aria-hidden="true">
-                        <span>ID</span>
-                        <span data-en="Target" data-ko="대상"></span>
-                        <span data-en="Score / Type" data-ko="점수 / 유형"></span>
-                        <span data-en="Status / Link" data-ko="상태 / 링크"></span>
+                <div class="adv-category adv-category-confirmed">
+                    <div class="adv-category-head">
+                        <h3 class="adv-category-title" data-en="Published &amp; Recognized" data-ko="공개 완료 / 인정"></h3>
+                        <span class="adv-category-year">2026</span>
                     </div>
-                    <div class="adv-row">
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56526" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2025-56526</a>
-                        <span class="adv-target">Kotaemon</span>
-                        <span class="adv-type">XSS</span>
-                        <a href="https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure" class="adv-report" target="_blank" rel="noopener">Report ↗</a>
+                    <div class="adv-vendor-grid">
+                    <div class="adv-group adv-vendor-card">
+                        <h4 class="adv-vendor-title">Adobe</h4>
+                        <div class="adv-findings">
+                        <div class="adv-row">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-80160" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2026-80160</a>
+                            <span class="adv-target">Adobe</span>
+                            <span class="adv-type">CVSS 3.3</span>
+                            <a href="https://www.zerodayinitiative.com/advisories/ZDI-26-659/" class="adv-report adv-report-confirmed" target="_blank" rel="noopener">ZDI-26-659 ↗</a>
+                        </div>
+                        <div class="adv-row">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-80162" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2026-80162</a>
+                            <span class="adv-target">Adobe</span>
+                            <span class="adv-type">CVSS 3.3</span>
+                            <a href="https://www.zerodayinitiative.com/advisories/ZDI-26-660/" class="adv-report adv-report-confirmed" target="_blank" rel="noopener">ZDI-26-660 ↗</a>
+                        </div>
+                        <div class="adv-row">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81978" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2026-81978</a>
+                            <span class="adv-target">Adobe</span>
+                            <span class="adv-type">CVSS 3.3</span>
+                            <a href="https://www.zerodayinitiative.com/advisories/ZDI-26-669/" class="adv-report adv-report-confirmed" target="_blank" rel="noopener">ZDI-26-669 ↗</a>
+                        </div>
+                        </div>
                     </div>
-                    <div class="adv-row">
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56527" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2025-56527</a>
-                        <span class="adv-target">Kotaemon</span>
-                        <span class="adv-type" data-en="Sensitive Data" data-ko="민감정보 노출"></span>
-                        <a href="https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure" class="adv-report" target="_blank" rel="noopener">Report ↗</a>
+                    <div class="adv-group adv-vendor-card">
+                        <h4 class="adv-vendor-title">GIMP</h4>
+                        <div class="adv-findings">
+                        <div class="adv-row">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42170" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2026-42170</a>
+                            <span class="adv-target">GIMP</span>
+                            <span class="adv-type">CVSS 7.8</span>
+                            <span class="adv-status status-published" data-en="Published" data-ko="공개 완료"></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="adv-group adv-vendor-card">
+                        <h4 class="adv-vendor-title">Toss</h4>
+                        <div class="adv-findings">
+                        <div class="adv-row">
+                            <span class="adv-id adv-id-confirmed">TBB-26342</span>
+                            <span class="adv-target">Toss</span>
+                            <span class="adv-type" data-en="Bug Bounty" data-ko="버그바운티"></span>
+                            <a href="https://bugbounty.toss.im/ranking" class="adv-report adv-report-confirmed" target="_blank" rel="noopener" data-en="Hall of Fame ↗" data-ko="명예의 전당 ↗"></a>
+                        </div>
+                        <div class="adv-row">
+                            <span class="adv-id adv-id-confirmed">TBB-26350</span>
+                            <span class="adv-target">Toss</span>
+                            <span class="adv-type" data-en="Bug Bounty" data-ko="버그바운티"></span>
+                            <a href="https://bugbounty.toss.im/ranking" class="adv-report adv-report-confirmed" target="_blank" rel="noopener" data-en="Hall of Fame ↗" data-ko="명예의 전당 ↗"></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="adv-group adv-vendor-card">
+                        <h4 class="adv-vendor-title">Apple</h4>
+                        <div class="adv-findings">
+                        <div class="adv-row">
+                            <a href="https://www.cve.org/CVERecord?id=CVE-2026-112656" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2026-112656</a>
+                            <span class="adv-target">Apple</span>
+                            <span class="adv-type">CVSS 3.3</span>
+                            <a href="https://www.zerodayinitiative.com/advisories/ZDI-26-831/" class="adv-report adv-report-confirmed" target="_blank" rel="noopener">ZDI-26-831 ↗</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="adv-category adv-category-archive">
+                    <div class="adv-category-head">
+                        <h3 class="adv-category-title" data-en="Archive" data-ko="아카이브"></h3>
+                        <span class="adv-category-year">2025</span>
+                    </div>
+                    <div class="adv-vendor-grid">
+                    <div class="adv-group adv-vendor-card">
+                        <h4 class="adv-vendor-title">Kotaemon</h4>
+                        <div class="adv-findings">
+                        <div class="adv-row">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56526" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2025-56526</a>
+                            <span class="adv-target">Kotaemon</span>
+                            <span class="adv-type">XSS</span>
+                            <a href="https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure" class="adv-report" target="_blank" rel="noopener">Report ↗</a>
+                        </div>
+                        <div class="adv-row">
+                            <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-56527" class="adv-id adv-id-link" target="_blank" rel="noopener">CVE-2025-56527</a>
+                            <span class="adv-target">Kotaemon</span>
+                            <span class="adv-type" data-en="Sensitive Data" data-ko="민감정보 노출"></span>
+                            <a href="https://github.com/HanTul/Kotaemon-CVE-2025-56526-56527-disclosure" class="adv-report" target="_blank" rel="noopener">Report ↗</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section id="awards" class="block">
+                <div class="block-head">
+                    <span class="block-num">04</span>
+                    <h2 class="block-title" data-en="Awards" data-ko="수상"></h2>
+                </div>
+                <p class="sub-label">2026</p>
+                <div class="entries awards-grid">
+                    <a class="entry entry-link" href="https://spot.wooribank.com/pot/Dream?withyou=BPPBC0035&amp;__STEP=1&amp;ARTICLE_ID=65286&amp;TITLE=&amp;pageNum=1" target="_blank" rel="noopener">
+                        <div class="entry-head">
+                            <h3 class="entry-title"><span data-en="Best Award" data-ko="최우수상"></span> <span class="award-place" data-en="2nd Place" data-ko="2위"></span></h3>
+                            <span class="entry-date">2026.10.21</span>
+                        </div>
+                        <p class="entry-sub"><span data-en="6th Woori Bank WooriCON Mock Hacking Competition" data-ko="제6회 우리은행 모의해킹 경진대회 우리콘(WooriCON)"></span> <span class="arr">↗</span></p>
+                        <p class="entry-note" data-en="Hosted by Woori Bank &amp; Financial Security Institute" data-ko="우리은행·금융보안원 공동 주최"></p>
+                    </a>
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3 class="entry-title" data-en="Best Award" data-ko="최우수상"></h3>
+                            <span class="entry-date">2026.08.27</span>
+                        </div>
+                        <p class="entry-sub" data-en="2026 Ethical Hacker Training (7th)" data-ko="2026년 윤리적 해커 양성(7기)"></p>
+                        <p class="entry-note" data-en="National Security Research Institute Director's Award" data-ko="국가보안기술연구소 소장상"></p>
+                        <p class="entry-note" data-en="Elite White-Hat Hacker &amp; Security Developer Training" data-ko="최정예 화이트 해커·보안개발자 양성 교육"></p>
+                    </div>
+                </div>
+                <p class="sub-label">2025</p>
+                <div class="entries awards-grid">
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3 class="entry-title"><span data-en="Best Award" data-ko="최우수상"></span> <span class="award-place" data-en="Junior" data-ko="3학년"></span></h3>
+                            <span class="entry-date">2025.10.31</span>
+                        </div>
+                        <p class="entry-sub" data-en="2nd AI Cyber Security Academic Festival" data-ko="제2회 인공지능사이버보안학과 학술제"></p>
+                        <p class="entry-note" data-en="LLM-based Web Vulnerability Scanner" data-ko="LLM 기반 웹 취약점 스캐너"></p>
                     </div>
                 </div>
             </section>
@@ -195,7 +316,7 @@
             <!-- Projects -->
             <section id="projects" class="block">
                 <div class="block-head">
-                    <span class="block-num">03</span>
+                    <span class="block-num">05</span>
                     <h2 class="block-title" data-en="Projects" data-ko="프로젝트"></h2>
                 </div>
                 <div class="entries">
@@ -258,27 +379,10 @@
                 </div>
             </section>
 
-            <!-- Awards -->
-            <section id="awards" class="block">
-                <div class="block-head">
-                    <span class="block-num">04</span>
-                    <h2 class="block-title" data-en="Awards" data-ko="수상"></h2>
-                </div>
-                <div class="entries">
-                    <div class="entry">
-                        <div class="entry-head">
-                            <h3 class="entry-title" data-en="2nd AI Cyber Security Academic Festival · Best Award (Junior)" data-ko="제2회 인공지능사이버보안학과 학술제 최우수상 (3학년)"></h3>
-                            <span class="entry-date">2025</span>
-                        </div>
-                        <p class="entry-note" data-en="LLM-based Web Vulnerability Scanner" data-ko="LLM 기반 웹 취약점 스캐너"></p>
-                    </div>
-                </div>
-            </section>
-
             <!-- Education -->
             <section id="education" class="block">
                 <div class="block-head">
-                    <span class="block-num">05</span>
+                    <span class="block-num">06</span>
                     <h2 class="block-title" data-en="Education" data-ko="교육"></h2>
                 </div>
 
@@ -295,6 +399,13 @@
 
                 <p class="sub-label" data-en="Training" data-ko="교육 / 수료"></p>
                 <div class="entries">
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3 class="entry-title" data-en="Cybersecurity Training Center · 2026 Ethical Hacker Training (7th)" data-ko="사이버안보훈련센터 · 2026년 윤리적 해커 양성(7기)"></h3>
+                            <span class="entry-date">2026.07.06 ~ 2026.08.27</span>
+                        </div>
+                        <p class="entry-note" data-en="Completed the full Elite White-Hat Hacker &amp; Security Developer training program" data-ko="최정예 화이트 해커·보안개발자 양성 전 과정 수료"></p>
+                    </div>
                     <div class="entry">
                         <div class="entry-head">
                             <h3 class="entry-title" data-en="KITRI · WhiteHat School 3rd (Pre-BoB)" data-ko="한국정보기술연구원 (KITRI) · 화이트햇 스쿨 3기 (Pre-BoB)"></h3>
@@ -338,10 +449,33 @@
             <!-- Activities -->
             <section id="activities" class="block">
                 <div class="block-head">
-                    <span class="block-num">06</span>
+                    <span class="block-num">07</span>
                     <h2 class="block-title" data-en="Activities" data-ko="활동"></h2>
                 </div>
-                <div class="entries">
+                <p class="sub-label" data-en="Teaching" data-ko="강의"></p>
+                <div class="entries entries-compact">
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3 class="entry-title"><span data-en="Smart City Web Vulnerability Assessment (Session 2)" data-ko="스마트시티 웹 취약점 점검 과정 (2회차)"></span> <span class="activity-role" data-en="· Mini CTF Instructor" data-ko="· 미니 CTF 강사"></span></h3>
+                            <span class="entry-date">2026.10.13</span>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3 class="entry-title"><span data-en="Smart City Web Vulnerability Assessment (Session 1)" data-ko="스마트시티 웹 취약점 점검 과정 (1회차)"></span> <span class="activity-role" data-en="· Mini CTF Instructor" data-ko="· 미니 CTF 강사"></span></h3>
+                            <span class="entry-date">2026.09.08</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="sub-label" data-en="CTF Operations &amp; Challenge Development" data-ko="CTF 운영·문제 출제"></p>
+                <div class="entries entries-compact">
+                    <div class="entry">
+                        <div class="entry-head">
+                            <h3 class="entry-title"><a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=410179" target="_blank" rel="noopener"><span data-en="HackTheon Sejong K–12 Cybersecurity Festival" data-ko="핵테온 세종 초·중·고 사이버보안 한마당"></span> <span class="arr">↗</span></a> <span class="activity-role" data-en="· CTF Operations &amp; Challenge Development" data-ko="· CTF 운영 및 문제 출제"></span></h3>
+                            <span class="entry-date">2026</span>
+                        </div>
+                    </div>
                     <div class="entry">
                         <div class="entry-head">
                             <h3 class="entry-title" data-en="KCTF Jr. Challenge Development" data-ko="KCTF Jr. 문제 출제"></h3>
@@ -370,7 +504,7 @@
             <!-- Contact -->
             <section id="contact" class="block">
                 <div class="block-head">
-                    <span class="block-num">07</span>
+                    <span class="block-num">08</span>
                     <h2 class="block-title" data-en="Contact" data-ko="연락처"></h2>
                 </div>
                 <ul class="contact-list">
